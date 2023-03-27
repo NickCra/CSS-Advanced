@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gradients</title>
   <style>
-    /* Linear Gradients - Top to Bottom */
+    /* Top to Bottom */
 
     #grad1 {
       height: 200px;
@@ -14,7 +14,7 @@
       background-image: linear-gradient(red, yellow);
     }
 
-    /* Linear Gradients- Left to Right */
+    /* Left to Right */
 
     #grad2 {
       height: 200px;
@@ -22,7 +22,7 @@
       background-image: linear-gradient(to right, red, yellow);
     } 
 
-    /* Linear Gradients - Diagonal */
+    /* Diagonal */
 
     #grad3 {
       height: 200px;
@@ -30,7 +30,7 @@
       background-image: linear-gradient(to bottom right, red, yellow);
     }
 
-    /* Using Angles */
+    /* Angles */
 
     #grad4 {
       height: 200px;
@@ -55,6 +55,32 @@
       background-color: red;
       background-image: linear-gradient(-90deg, red, yellow);
     }
+
+    /* Multiple Color Stops */
+    #grad8 {
+      height: 200px;
+      background-color: red;
+      background-image: linear-gradient(red, yellow, green);
+    }
+
+    #grad9 {
+      height: 200px;
+      background-color: red;
+      background-image: linear-gradient(red, orange, yellow, green, blue, indigo, violet);
+    }
+
+    #grad10 {
+      height: 200px;
+      background-color: red;
+      background-image: linear-gradient(red 10%, green 85%, blue 90%);
+    }
+
+    #grad11 {
+      height: 200px;
+      background-color: red;
+      background-image: linear-gradient(to right, red, orange, yellow, green, blue, violet);
+    }
+
   </style>
 </head>
 <body>
@@ -80,6 +106,20 @@
   <div id="grad6" style="text-align:center;">180deg</div><br>
   <div id="grad7" style="text-align:center;">-90deg</div>
 
+  <h1>Linear Gradients - Multiple Color Stops</h1>
+  <p><strong>Note:</strong> Color stops are spaced evenly when no percents are specified.</p>
+
+  <h2>3 Color Stops (evenly spaced):</h2>
+  <div id="grad8"></div>
+
+  <h2>7 Color Stops (evenly spaced):</h2>
+  <div id="grad9"></div>
+
+  <h2>3 Color Stops (not evenly spaced):</h2>
+  <div id="grad10"></div>
+
+  <h2>Rainbow Background</h2>
+  <div id="grad11"></div>
 
 </body>
 </html>
