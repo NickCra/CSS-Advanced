@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Effects</title>
+  <style>
+    /* Text Overflow */
+    div.test1 {
+      white-space: nowrap;
+      border: 1px solid black;
+      width: 200px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    div.test1:hover {
+      white-space: nowrap;
+      border: 1px solid black;
+      width: 200px;
+      overflow: visible;
+    }
+  </style>
+</head>
+<body>
+  <h2>Text Overflow</h2>
+
+  <p>Hover over the two divs below, to see the entire text.</p>
+
+ <div class="test1">This is some long text that will not fit in the box</div>
+
+ <br>
+ 
+ <div class="test1" style="text-overflow:clip;">This is some long text that will not fit in the box</div>
+
+</body>
+</html>
