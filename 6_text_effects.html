@@ -46,6 +46,19 @@
       border: 1px solid black;
       word-break: break-all;
     }
+
+    /* Writing Mode */
+    p.test6 {
+      writing-mode: horizontal-tb;
+    }
+
+    span.test7 {
+      writing-mode: vertical-lr;
+    }
+
+    p.test8 {
+      writing-mode: vertical-lr;
+    }
   </style>
 </head>
 <body>
@@ -74,6 +87,18 @@
   <p class="test4">This paragraph contains some text. This line will-break-at-hyphens.</p>
 
   <p class="test5">This paragraph contains some text. The lines will break at any character.</p>
+
+  <br>
+
+  <h2>Writing Mode</h2>
+
+  <p class="test6">Some text with default writing-mode.</p>
+
+  <p>Some text with a span element with a <span class="test7">vertical-rl</span> writing-mode.</p>
+
+  <p class="test8">Some text with writing-mode: vertical-rl.</p>
+
+  <br>
 
 </body>
 </html>
