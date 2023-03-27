@@ -81,6 +81,24 @@
       background-image: linear-gradient(to right, red, orange, yellow, green, blue, violet);
     }
 
+    /* Transparency */
+    #grad12 {
+      height: 200px;
+      background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1.0));
+    }
+
+    /* Repeating */
+    #grad13 {
+      height: 200px;
+      background-color: red;
+      background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+    }
+
+    #grad14 {
+      height: 200px;
+      background-color: red;
+      background-image: repeating-linear-gradient(45deg, red, yellow 10%, green 20%);
+    }
   </style>
 </head>
 <body>
@@ -120,6 +138,17 @@
 
   <h2>Rainbow Background</h2>
   <div id="grad11"></div>
+
+  <h2>Transparency</h2>
+  <div id="grad12"></div>
+
+  <h2>Repeating a linear-gradient</h2>
+
+  <div id="grad13"></div>
+
+  <br><br>
+
+  <div id="grad14"></div>
 
 </body>
 </html>
