@@ -59,6 +59,35 @@
       box-shadow: 5px 5px 8px  lightblue, 10px 10px 8px lightgreen, 15px 15px 8px lightcoral;
     }   
 
+    /* Cards */
+    div.card {
+      width: 250px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      text-align: center;
+    }
+
+    div.header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      font-size: 40px;
+    }
+
+    div.container1 {
+      padding: 10px;
+    }
+
+    /* Polaroid Images */
+    div.polaroid {
+      width: 300px;
+      text-align: center;
+      box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    div.container2 {
+      padding: 10px;
+    }
+
   </style>
 </head>
 <body>
@@ -88,6 +117,37 @@
     <h2>Multiple shadows with blur effect</h2>
     <p>box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green:</p>
   </div>
+
+  <br>
+
+  <h1>Cards</h1>
+
+<p>The box-shadow property can be used to create paper-like cards:</p>
+
+<div class="card">
+  <div class="header">
+    <h1>1</h1>
+  </div>
+
+  <div class="container1">
+    <p>January 1, 2021</p>
+  </div>
+</div>
+
+<br><br>
+
+<h1>Polaroid Images</h1>
+
+<p>The box-shadow property can be used to create polaroid images:</p>
+
+<div class="polaroid">
+  <img src="Img/pexels-maria-isabella-bernotti-1049298.jpg" alt="Phillipines" width="300,8" height="200">
+  <div class="container2">
+    <p>Boracay, Phillipines</p>
+  </div>
+</div>
+
+<br><br>
 
 </body>
 </html>
