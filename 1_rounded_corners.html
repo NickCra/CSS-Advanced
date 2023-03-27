@@ -6,10 +6,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rounded Corners</title>
   <style>
-    
+    /* Border-radius Property */
+    #rcorners1 {
+      border: 1px solid green;
+      height: 100px;
+      width: 200px;
+      border-radius: 25px;
+      padding: 20px;
+    }
+
+    /* Specify Each Corner */
+    #rcorners2 {
+      background-color: green;
+      width: 200px;
+      height: 100px;
+      border-radius: 15px 50px 30px 5px;
+    }
+
+    #rcorners3 {
+      background-color: green;
+      width: 200px;
+      height: 100px;
+      border-radius: 15px 50px 30px;
+    }
+
+    #rcorners4 {
+      background-color: green;
+      width: 200px;
+      height: 100px;
+      border-radius: 15px 50px;
+    }
+
+    #rcorners5 {
+      background-color: green;
+      width: 200px;
+      height: 100px;
+      border-radius: 15px;
+    }
+
   </style>
 </head>
 <body>
-  
+  <p id="rcorners1">Rounded Corners!</p>
+
+  <p>Four values - border-radius: 15px 50px 30px 5px:</p>
+  <p id="rcorners2"></p>
+
+  <p>Three values - border-radius: 15px 50px 30px:</p>
+  <p id="rcorners3"></p>
+
+  <p>Two values - border-radius: 15px 50px:</p>
+  <p id="rcorners4"></p>
+
+  <p>One value - border-radius: 15px:</p>
+  <p id="rcorners5"></p>
 </body>
 </html>
