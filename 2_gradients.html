@@ -7,7 +7,7 @@
   <title>Gradients</title>
   <style>
     /* Linear Gradients - Top to Bottom */
-    
+
     #grad1 {
       height: 200px;
       background-color: red; /* For browsers that do not support gradients */
@@ -30,6 +30,31 @@
       background-image: linear-gradient(to bottom right, red, yellow);
     }
 
+    /* Using Angles */
+
+    #grad4 {
+      height: 200px;
+      background-color: red;
+      background-image: linear-gradient(0deg, red, yellow);
+    }
+
+    #grad5 {
+      height: 200px;
+      background-color: red;
+      background-image: linear-gradient(90deg, red, yellow);
+    }
+
+    #grad6 {
+      height: 200px;
+      background-color: red;
+      background-image: linear-gradient(180deg, red, yellow);
+    }
+
+    #grad7 {
+      height: 200px;
+      background-color: red;
+      background-image: linear-gradient(-90deg, red, yellow);
+    }
   </style>
 </head>
 <body>
@@ -37,8 +62,6 @@
   <p>This linear gradient starts red at the top, transitioning to yellow at the bottom:</p>
 
   <div id="grad1"></div>
-
-  <br>
 
   <h1>Linear Gradient - Left to Right</h1>
   <p>This linear gradient starts red at the left, transitioning to yellow (to the right):</p>
@@ -49,6 +72,14 @@
   <p>This linear gradient starts red at top left, transitioning to yellow (at bottom right):</p>
   
   <div id="grad3"></div>
+
+  <h1>Linear Gradients - Using Different Angles</h1>
+
+  <div id="grad4" style="text-align:center;">0deg</div><br>
+  <div id="grad5" style="text-align:center;">90deg</div><br>
+  <div id="grad6" style="text-align:center;">180deg</div><br>
+  <div id="grad7" style="text-align:center;">-90deg</div>
+
 
 </body>
 </html>
