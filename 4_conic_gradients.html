@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Conic Gradients</title>
   <style>
+    /* Three Colors */
     #grad1 {
       height: 200px;
       width: 200px;
@@ -13,11 +14,20 @@
       background-image: conic-gradient(red, yellow, green);
     }
 
+    /* Five Colors */
     #grad2 {
       height: 200px;
       width: 200px;
       background-color: red;
       background-image: conic-gradient(red, yellow, green, blue, black);
+    }
+
+    /* Defined Degrees */
+    #grad3 {
+      height: 200px;
+      width: 200px;
+      background-color: red;
+      background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg);
     }
   </style>
 </head>
@@ -28,6 +38,11 @@
 
   <h1>Conic Gradient - Five Colors</h1>
 
-<div id="grad2"></div>
+  <div id="grad2"></div>
+
+  <h1>Conic Gradient - Defined degree for each color</h1>
+
+  <div id="grad3"></div>
+
 </body>
 </html>
