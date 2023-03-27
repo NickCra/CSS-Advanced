@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Shadow</title>
+  <style>
+    /* Horizontal and Vertical */
+    #box1 {
+      width: 300px;
+      height: 100px;
+      padding: 15px;
+      background-color: lightsalmon;
+      box-shadow: 10px 12px;
+    }
+
+    /* Color */
+    #box2 {
+      width: 300px;
+      height: 100px;
+      padding: 15px;
+      background-color: lightsalmon;
+      box-shadow: 10px 12px lightblue;
+    }
+
+    /* Effect */
+    #box3 {
+      width: 300px;
+      height: 100px;
+      padding: 15px;
+      background-color: lightsalmon;
+      box-shadow: 10px 12px 5px lightblue;
+    }    
+
+    /* Spread Radius */
+    #box4 {
+      width: 300px;
+      height: 100px;
+      padding: 15px;
+      background-color: lightsalmon;
+      box-shadow: 10px 12px 5px 12px lightblue;
+    }      
+
+    /* Inset */
+    #box5 {
+      width: 300px;
+      height: 100px;
+      padding: 15px;
+      background-color: lightsalmon;
+      box-shadow: 10px 12px 5px 12px lightblue inset;
+    }   
+    
+    /* Multiple */
+    #box6 {
+      padding: 15px;
+      margin: 20px;
+      border: 1px solid black;
+      box-shadow: 5px 5px 8px  lightblue, 10px 10px 8px lightgreen, 15px 15px 8px lightcoral;
+    }   
+
+  </style>
+</head>
+<body>
+  <h1>Horizontal and Vertical</h1>
+
+  <div id="box1">This is a div element with a box-shadow</div>
+
+  <h1>Color</h1>
+
+  <div id="box2">A div element with a lightblue box-shadow</div>
+
+  <h1>Effect</h1>
+
+  <div id="box3">A div element with a 5px blurred, lightblue box-shadow</div>
+
+  <h1>Spread Radius</h1>
+
+  <div id="box4">A div element with a blurred, lightblue box-shadow, with a spread radius of 12px.</div>
+
+  <h1>Inset</h1>
+
+  <div id="box5">A div element with a blurred, lightblue, inset box-shadow.</div>
+
+  <h1>Multiple Shadows</h1>
+
+  <div id="box6">
+    <h2>Multiple shadows with blur effect</h2>
+    <p>box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green:</p>
+  </div>
+
+</body>
+</html>
