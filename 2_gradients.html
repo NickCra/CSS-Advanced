@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gradients</title>
+  <style>
+    /* Linear Gradients - Top to Bottom */
+    
+    #grad1 {
+      height: 200px;
+      background-color: red; /* For browsers that do not support gradients */
+      background-image: linear-gradient(red, yellow);
+    }
+
+    /* Linear Gradients- Left to Right */
+
+    #grad2 {
+      height: 200px;
+      background-color: red;
+      background-image: linear-gradient(to right, red, yellow);
+    } 
+
+    /* Linear Gradients - Diagonal */
+
+    #grad3 {
+      height: 200px;
+      background-color: red;
+      background-image: linear-gradient(to bottom right, red, yellow);
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Linear Gradient - Top to Bottom</h1>
+  <p>This linear gradient starts red at the top, transitioning to yellow at the bottom:</p>
+
+  <div id="grad1"></div>
+
+  <br>
+
+  <h1>Linear Gradient - Left to Right</h1>
+  <p>This linear gradient starts red at the left, transitioning to yellow (to the right):</p>
+
+  <div id="grad2"></div>
+
+  <h1>Linear Gradient - Diagonal</h1>
+  <p>This linear gradient starts red at top left, transitioning to yellow (at bottom right):</p>
+  
+  <div id="grad3"></div>
+
+</body>
+</html>
