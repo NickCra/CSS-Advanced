@@ -29,6 +29,33 @@
       background-color: red;
       background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg);
     }
+
+    /* Pie Chart */
+    #grad4 {
+      height: 200px;
+      width: 200px;
+      background-color: red;
+      background-image: conic-gradient(red, yellow, green, blue, black);
+      border-radius: 50%;
+    }
+
+    /* Pie Chart with Defined Degrees */
+    #grad5 {
+      height: 200px;
+      width: 200px;
+      background-color: red;
+      background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg, blue 360deg);
+      border-radius: 50%;
+    }
+
+    /* Specified from Angle */
+    #grad6 {
+      height: 200px;
+      width: 200px;
+      background-color: red;
+      background-image: conic-gradient(from 90deg, red, yellow, green);
+      border-radius: 50%;
+    }
   </style>
 </head>
 <body>
@@ -43,6 +70,18 @@
   <h1>Conic Gradient - Defined degree for each color</h1>
 
   <div id="grad3"></div>
+
+  <h1>Pie Chart</h1>
+
+  <div id="grad4"></div>
+
+  <h1>Pie Chart with Defined Degrees</h1>
+
+  <div id="grad5"></div>
+
+  <h1>Conic Gradient - With a from angle</h1>
+
+  <div id="grad6"></div>
 
 </body>
 </html>
