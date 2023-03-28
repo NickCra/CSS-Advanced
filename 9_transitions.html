@@ -119,6 +119,18 @@
       transform: rotate(180deg); 
     }
 
+    /* Transition Shorthand Property */
+    #div10{
+      height: 100px;
+      width: 100px;
+      background-color: red;
+      transition: width 2s linear 1s;
+    }
+
+    #div10:hover {
+      width: 300px;
+    }
+
   </style>
 </head>
 <body>
@@ -162,7 +174,15 @@
   
   <div id="div9"></div>
 
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br>
+
+  <h1>Using The transition Shorthand Property</h1>
+
+  <p>Hover over the div element below, to see the transition effect:</p>
+
+  <div id="div10"></div>
+
+  <p><b>Note:</b> The transition effect has a 1 second delay before starting.</p>
     
 </body>
 </html>
