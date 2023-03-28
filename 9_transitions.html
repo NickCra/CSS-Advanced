@@ -104,7 +104,21 @@
     #div8:hover {
       width: 300px;
     }
-    
+
+    /* Transition + Transform */
+    #div9 {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      transition: width 2s, height 2s, transform 2s;
+    }
+
+    #div9:hover {
+      width: 300px;
+      height: 300px;
+      transform: rotate(180deg); 
+    }
+
   </style>
 </head>
 <body>
@@ -142,5 +156,13 @@
 
   <p><b>Note:</b> The transition effect has a 1 second delay before starting.
 
+  <h1>Transition + Transform</h1>
+
+  <p>Hover over the div element below:</p>
+  
+  <div id="div9"></div>
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
 </body>
 </html>
