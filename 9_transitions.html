@@ -31,7 +31,7 @@
       height: 300px;
     }
 
-    /* Specify Speed Curve */
+    /* Transition-timing-function Property */
     #div3 {
       height: 100px;
       width: 100px;
@@ -91,14 +91,19 @@
     #div7:hover {
       width: 300px;
     }
-  </style>
-  </style>
 
+    /* Transition-delay Property */
+    #div8 {
+      height: 100px;
+      width: 100px;
+      background-color: red;
+      transition: width 2s;
+      transition-delay: 1s;
+    }
 
-  </style>
-
-
-  </style>
+    #div8:hover {
+      width: 300px;
+    }
   </style>
 </head>
 <body>
@@ -127,6 +132,14 @@
   <div id="div7">ease-in-out</div><br>
 
   <br>
+
+  <h1>The transition-delay Property</h1>
+
+  <p>Hover over the div element below, to see the transition effect:</p>
+
+  <div id="div8"></div>
+
+  <p><b>Note:</b> The transition effect has a 1 second delay before starting.
 
 </body>
 </html>
