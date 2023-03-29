@@ -124,6 +124,27 @@
         top: 0;
       }
     }
+
+    /* Retain Style Values from Last Keyframe when Animation Ends */
+    #div4 {
+      height: 100px;
+      width: 100px;
+      background-color: red;
+      position: relative;
+      animation-name: div4;
+      animation-duration: 3s;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes div4 {
+      from {
+        top: 0;
+      }
+      to {
+        top: 200px;
+        background-color: blue;
+      }
+    }
   </style>
 </head>
 <body>
@@ -144,5 +165,12 @@
   <p>The animation-direction property specifies whether an animation should be played forwards, backwards or in alternate cycles. The following example uses the value "alternate-reverse" to make the animation run backwards first, then forwards:</p>
 
   <div id="div3"></div>
+
+  <h1>fill-mode forwards</h1>
+
+  <p>Let the div element retain the style values set by the last keyframe when the animation ends:</p>
+
+  <div id="div4"></div>
+
 </body>
 </html>
