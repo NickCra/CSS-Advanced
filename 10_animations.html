@@ -154,6 +154,45 @@
         top: 0;
       }
     }
+
+    /* Multiple Runs */
+    #div6 {
+      height: 100px;
+      width: 100px;
+      background-color: red;
+      position: relative;
+      animation-name: div6;
+      animation-duration: 4s;
+      animation-iteration-count: 3;
+    }
+
+    @keyframes div6 {
+      0% {
+        background-color: red; 
+        left: 0;
+        top: 0;
+      }
+      25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0; 
+      }
+      50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+      }
+      75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+      }
+      100% {
+        background-color: red;
+        left: 0;
+        top: 0;
+      }
+    }
   </style>
 </head>
 <body>
@@ -186,6 +225,12 @@
   <p>Using negative values in the animation-delay property: Here, the animation will start as if it had already been playing for 2 seconds:</p>
 
   <div id="div5"></div>
+
+  <h1>CSS Animation with Multiple Runs</h1>
+
+  <p>The animation-iteration-count property specifies the number of times an animation should run. The following example will run the animation 3 times before it stops:</p>
+
+  <div id="div6"></div>
 
 </body>
 </html>
