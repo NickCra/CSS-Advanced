@@ -168,6 +168,29 @@
         top: 200px;
       }
     }
+
+    /* Get style values set by first keyframe before animation starts and retain style values from last keyframe when animation ends */
+    #div6 {
+      height: 100px;
+      width: 100px;
+      background-color: red;
+      position: relative;
+      animation-name: div6;
+      animation-duration: 3s;
+      animation-delay: 2s;
+      animation-fill-mode: both;
+    }
+
+    @keyframes div6 {
+      from {
+        background-color: yellow;
+        top: 0;
+      }
+      to {
+        background-color: blue;
+        top: 200px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -203,6 +226,15 @@
   <p>Let the div element get the style values set by the first keyframe before the animation starts (during the animation-delay period):</p>
 
   <div id="div5"></div>
+
+  <h1>fill mode both</h1>
+
+  <p>Let the div element get the style values set by the first keyframe before the animation starts, and retain the style values from the last keyframe when the animation ends:</p>
+
+  <div id="div6"></div>
+
+  <br><br><br><br><br><br><br><br>
+  <br><br><br><br>
 
 </body>
 </html>
