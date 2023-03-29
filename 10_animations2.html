@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animations 2</title>
+  <style>
+    #div1 {
+      height: 100px;
+      width: 100px;
+      background-color: red;
+      position: relative;
+      animation-name: div1;
+      animation-duration: 4s;
+      animation-direction: reverse;
+    }
+
+    @keyframes div1 {
+      0% {
+        background-color: red;
+        left: 0;
+        top: 0;
+      }
+      25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0;
+      }
+      50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+      }
+      75% {
+        background-color: green;
+        left: 0;
+        top: 200px;
+      }
+      100% {
+        background-color: red;
+        left: 0;
+        top: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Animation Reverse Direction</h1>
+
+<p>The animation-direction property specifies whether an animation should be played forwards, backwards or in alternate cycles. The following example will run the animation in reverse direction (backwards):</p>
+
+  <div id="div1"></div>
+</body>
+</html>
