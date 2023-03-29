@@ -145,6 +145,29 @@
         background-color: blue;
       }
     }
+
+    /* Get style values set by first keyframe before animation starts */
+    #div5 {
+      height: 100px;
+      width: 100px;
+      background-color: red;
+      position: relative;
+      animation-name: div5;
+      animation-duration: 4s;
+      animation-delay: 2s;
+      animation-fill-mode: backwards;
+    }
+
+    @keyframes div5 {
+      from {
+        background-color: yellow;
+        top: 0;
+      }
+      to {
+        background-color: red;
+        top: 200px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -171,6 +194,15 @@
   <p>Let the div element retain the style values set by the last keyframe when the animation ends:</p>
 
   <div id="div4"></div>
+
+  <br><br><br><br><br><br><br><br>
+  <br><br><br><br>
+
+  <h1>fill-mode backwards</h1>
+
+  <p>Let the div element get the style values set by the first keyframe before the animation starts (during the animation-delay period):</p>
+
+  <div id="div5"></div>
 
 </body>
 </html>
