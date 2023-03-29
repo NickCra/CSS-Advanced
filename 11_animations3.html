@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animations 3</title>
+  <style>
+    /* Using Six Animation Properties */
+    #div1 {
+      height: 100px;
+      width: 100px;
+      background-color: red;
+      position: relative;
+      animation-name: div1;
+      animation-duration: 5s;
+      animation-timing-function: linear;
+      animation-delay: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+
+    @keyframes div1 {
+      0%   {background-color:red; left:0px; top:0px;}
+      25%  {background-color:yellow; left:200px; top:0px;}
+      50%  {background-color:blue; left:200px; top:200px;}
+      75%  {background-color:green; left:0px; top:200px;}
+      100% {background-color:red; left:0px; top:0px;}
+    }
+
+    /* Using Shorthand Animation Property */
+    #div2 {
+      height: 100px;
+      width: 100px;
+      background-color: red;
+      position: relative;
+      animation: div2 5s linear 2s infinite alternate;
+    }
+
+    @keyframes div2 {
+      0%   {background-color:red; left:0px; top:0px;}
+      25%  {background-color:yellow; left:200px; top:0px;}
+      50%  {background-color:blue; left:200px; top:200px;}
+      75%  {background-color:green; left:0px; top:200px;}
+      100% {background-color:red; left:0px; top:0px;}
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Six Animation Properties</h1>
+
+  <p>This example uses six of the animation properties:</p>
+
+  <div id="div1"></div>
+
+  <br><br><br><br><br><br><br><br>
+  <br><br><br><br><br>
+
+  <h1>Shorthand Animation Property</h1>
+
+  <p>This example uses the shorthand animation property:</p>
+
+  <div id="div2"></div>
+
+  <br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br>
+
+</body>
+</html>
