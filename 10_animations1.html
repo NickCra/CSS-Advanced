@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animations 1</title>
+  <style>
+    /* Example 1 */
+    #div1 {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      animation-name: div1;
+      animation-duration: 4s;
+    }
+
+    @keyframes div1 {
+      from {
+        background-color: red;
+      }
+      to {
+        background-color: yellow;
+      }
+    }
+
+    /* Example 2 */
+    #div2 {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      animation-name: div2;
+      animation-duration: 4s;
+    }
+
+    @keyframes div2 {
+      0% {
+        background-color: red;
+      }
+      25% {
+        background-color: yellow;
+      }
+      50% {
+        background-color: blue;
+      }
+      100% {
+        background-color: green;
+      }
+    }
+
+    /* Example 3 */
+    #div3 {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      position: relative;
+      animation-name: div3;
+      animation-duration: 4s;
+    }
+
+    @keyframes div3 {
+      0% {
+        background-color: red; left:0px; top:0px;
+      }
+      25% {
+        background-color: yellow; left:200px; top:0px;
+      }
+      50% {
+        background-color: blue; left:200px; top:200px;
+      }
+      75% {
+        background-color: green; left:0px; top:200px;
+      }
+      100% {
+        background-color: red; left:0px; top:0px;
+      }
+    }
+
+    /* Delay Animation */
+    #div4 {
+      height: 100px;
+      width: 100px;
+      background-color: red;
+      position: relative;
+      animation-name: div4;
+      animation-duration: 4s;
+      animation-delay: 2s;
+    }
+
+    @keyframes div4 {
+      0% {
+        background-color: red; 
+        left: 0;
+        top: 0;
+      }
+      25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0; 
+      }
+      50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+      }
+      75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+      }
+      100% {
+        background-color: red;
+        left: 0;
+        top: 0;
+      }
+    }
+
+    /* Negative Delay */
+    #div5 {
+      height: 100px;
+      width: 100px;
+      background-color: red;
+      position: relative;
+      animation-name: div5;
+      animation-duration: 4s;
+      animation-delay: -2s;
+    }
+
+    @keyframes div5 {
+      0% {
+        background-color: red; 
+        left: 0;
+        top: 0;
+      }
+      25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0; 
+      }
+      50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+      }
+      75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+      }
+      100% {
+        background-color: red;
+        left: 0;
+        top: 0;
+      }
+    }
+
+    /* Multiple Runs */
+    #div6 {
+      height: 100px;
+      width: 100px;
+      background-color: red;
+      position: relative;
+      animation-name: div6;
+      animation-duration: 4s;
+      animation-iteration-count: 3;
+    }
+
+    @keyframes div6 {
+      0% {
+        background-color: red; 
+        left: 0;
+        top: 0;
+      }
+      25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0; 
+      }
+      50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+      }
+      75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+      }
+      100% {
+        background-color: red;
+        left: 0;
+        top: 0;
+      }
+    }
+
+    /* Multiple Runs */
+    #div6 {
+      height: 100px;
+      width: 100px;
+      background-color: red;
+      position: relative;
+      animation-name: div6;
+      animation-duration: 4s;
+      animation-iteration-count: 3;
+    }
+
+    @keyframes div6 {
+      0% {
+        background-color: red; 
+        left: 0;
+        top: 0;
+      }
+      25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0; 
+      }
+      50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+      }
+      75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+      }
+      100% {
+        background-color: red;
+        left: 0;
+        top: 0;
+      }
+    }
+
+    /* Infinite Runs */
+    #div7 {
+      height: 100px;
+      width: 100px;
+      background-color: red;
+      position: relative;
+      animation-name: div7;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes div7 {
+      0% {
+        background-color: red; 
+        left: 0;
+        top: 0;
+      }
+      25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0; 
+      }
+      50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+      }
+      75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+      }
+      100% {
+        background-color: red;
+        left: 0;
+        top: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Animation 1</h1>
+
+  <div id="div1"></div>
+
+  <p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+
+  <br>
+
+  <h1>CSS Animation 2</h1>
+
+  <div id="div2"></div>
+
+  <br>
+
+  <h1>CSS Animation 3</h1>
+
+  <div id="div3"></div>
+
+  <h1>CSS Animation Delay</h1>
+
+  <p>The animation-delay property specifies a delay for the start of an animation. The following example has a 2 seconds delay before starting the animation:</p>
+
+  <div id="div4"></div>
+
+  <h1>CSS Animation Negative Delay</h1>
+
+  <p>Using negative values in the animation-delay property: Here, the animation will start as if it had already been playing for 2 seconds:</p>
+
+  <div id="div5"></div>
+
+  <h1>CSS Animation with Multiple Runs</h1>
+
+  <p>The animation-iteration-count property specifies the number of times an animation should run. The following example will run the animation 3 times before it stops:</p>
+
+  <div id="div6"></div>
+
+  <h1>CSS Animation with Infinite Runs</h1>
+
+  <p>The animation-iteration-count property can be set to infinite to let the animation run for ever:</p>
+
+  <div id="div7"></div>
+
+</body>
+</html>
