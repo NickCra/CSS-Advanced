@@ -146,6 +146,42 @@
       visibility: visible;
     }
 
+    /* Top Arrow */
+    .tooltip6 {
+      position: relative;
+      display: inline-block;
+      border-bottom: 1px dotted black;
+    }
+
+    .tooltip6 .tooltiptext6 {
+      visibility: hidden;
+      background-color: black;
+      color: #fff;
+      width: 120px;
+      padding: 5px 0px;
+      text-align: center;
+      border-radius: 6px;
+      position: absolute;
+      z-index: 1;
+      left: 50%;
+      top: 150%;
+      margin-left: -60px;
+    }
+
+    .tooltip6 .tooltiptext6::after {
+      content:"";
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: transparent transparent black transparent;
+    }
+
+    .tooltip6:hover .tooltiptext6 {
+      visibility: visible;
+    }
 
   </style>
 </head>
@@ -188,5 +224,13 @@
   </div>
 
   <br><br><hr>
+
+  <h2>Bottom Tooltip with Top Arrow</h2>
+  <div class="tooltip6">Hover over me
+    <span class="tooltiptext6">Tooltip Text</span>
+  </div>
+
+  <br><br><hr>
+
 </body>
 </html>
