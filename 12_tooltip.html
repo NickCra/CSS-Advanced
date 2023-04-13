@@ -50,13 +50,38 @@
       padding: 5px;
       border-radius: 6px;
       position: absolute;
-      position: absolute;
       z-index: 1;
       right: 105%;
       top: -5px;
     }
 
     .tooltip2:hover .tooltiptext2 {
+      visibility: visible;
+    }
+
+    /* Top Tooltip */
+    .tooltip3 {
+      position: relative;
+      display: inline-block;
+      border-bottom: 1px dotted black;
+    }
+
+    .tooltiptext3 {
+      visibility: hidden;
+      width: 120px;
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 0;
+      position: absolute;
+      z-index: 1;
+      bottom: 100%;
+      left: 50%;
+      margin-left: -60px;
+    }
+
+    .tooltip3:hover .tooltiptext3 {
       visibility: visible;
     }
 
@@ -75,6 +100,14 @@
   <p>Move the mouse over the text below:</p>
   <div class="tooltip2">Hover over me
     <span class="tooltiptext2">Tooltip Text</span>
+  </div>
+
+  <br><br><hr>
+
+  <h2>Top Tooltip</h2>
+  <p>Move the mouse over the text below:</p>
+  <div class="tooltip3">Hover over me
+    <span class="tooltiptext3">Tooltip Text</span>
   </div>
 
 </body>
