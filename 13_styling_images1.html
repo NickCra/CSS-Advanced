@@ -6,13 +6,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Styling Images</title>
   <style>
+    /* Rounded Image */
     .img1 {
       border-radius: 8px;
     }
 
+    /* Circled Image */
     .img2 {
       border-radius: 50%;
     }
+
+    /* Thumbnail Image */
+    .img3 {
+      border: 1px solid lightgrey;
+      border-radius: 4px;
+      padding: 5px;
+      width: 150px;
+    }
+
+    /* Thumbnaim Image Link */
+    .img4 {
+      border: 1px solid lightgrey;
+      border-radius: 4px;
+      padding: 5px;
+      width: 150px;
+    }
+
+    .img4:hover {
+      box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    }
+
   </style>
 </head>
 <body>
@@ -21,6 +44,14 @@
 
   <h2>Circled Image</h2>
   <img src="img/pexels-deva-darshan-1123972_150_188.jpg" alt="City Traffic" class="img2">
+
+  <h2>Thumbnail Images</h2>
+  <img src="img/pexels-deva-darshan-1123972_150_188.jpg" alt="City Traffic Thumbnail" class="img3">
+
+  <h2>Thumbnail Image as Link</h2>
+  <a href="/Img/pexels-deva-darshan_2782_3477.jpg" taget="_blank">
+    <img src="img/pexels-deva-darshan-1123972_150_188.jpg" alt="City Traffic Thumbnail Link" class="img4">
+  </a>
 
 </body>
 </html>
