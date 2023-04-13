@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styling Images 3</title>
+  <style>
+    /* Image Text - Top Left */
+    div.container1 {
+      position: relative;
+    }
+
+    div.topleft {
+      position: absolute;
+      top: 8px;
+      left: 16px;
+      font-size: 18px;
+    }
+
+    .img1 {
+      width: 100%;
+      height: auto;
+      opacity: 0.3;
+    }
+
+    /* Image Text - Top Right */
+    div.topright {
+      font-size: 18px;
+      position: absolute;
+      right: 16px;
+      top: 8px;
+    }
+
+    /* Image Text - Centered */
+    div.centered {
+      font-size: 18px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    /* Image Text - Bottom Left */
+    div.bottomleft {
+      font-size: 18px;
+      position: absolute;
+      bottom: 8px;
+      left: 16px;
+    }
+
+    /* Image Text - Bottom Right */
+    div.bottomright {
+      font-size: 18px;
+      position: absolute;
+      right: 18px;
+      bottom: 8px;
+    }
+
+  </style>
+</head>
+<body>
+  <h2>Image Text - Top Left</h2>
+  <div class="container1">
+    <img src="img/pexels-maria-isabella-bernotti_1000_300.jpg" alt="A beach" class="img1" width="1000" height="300">
+    <div class="topleft">Top Left</div>
+  </div>
+
+  <h2>Image Text - Top Right</h2>
+  <div class="container1">
+    <img src="img/pexels-maria-isabella-bernotti_1000_300.jpg" alt="A beach" class="img1" width="1000" height="300">
+    <div class="topright">Top Right</div>
+  </div>
+
+  <h2>Image Text - Centered</h2>
+  <div class="container1">
+    <img src="img/pexels-maria-isabella-bernotti_1000_300.jpg" alt="A beach" class="img1" width="1000" height="300">
+    <div class="centered">Centered</div>
+  </div>
+
+  <h2>Image Text - Bottom Left</h2>
+  <div class="container1">
+    <img src="img/pexels-maria-isabella-bernotti_1000_300.jpg" alt="A beach" class="img1" width="1000" height="300">
+    <div class="bottomleft">Bottom Left</div>
+  </div>
+
+  <h2>Image Text - Bottom Right</h2>
+  <div class="container1">
+    <img src="img/pexels-maria-isabella-bernotti_1000_300.jpg" alt="A beach" class="img1" width="1000" height="300">
+    <div class="bottomright">Bottom Right</div>
+  </div>
+</body>
+</html>
