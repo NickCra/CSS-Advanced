@@ -183,6 +183,41 @@
       visibility: visible;
     }
 
+    /* Left Arrow */
+    .tooltip7 {
+      position: relative;
+      display: inline-block;
+      border-bottom: 1px dotted black;
+    }
+
+    .tooltip7 .tooltiptext7 {
+      visibility: hidden;
+      background-color: black;
+      color: #fff;
+      padding: 5px 0px;
+      border-radius: 6px;
+      text-align: center;
+      width: 120px;
+      position: absolute;
+      top: -5px;
+      left: 110%;
+    }
+
+    .tooltip7 .tooltiptext7::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 100%;
+      margin-top: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: transparent black transparent transparent;
+    }
+
+    .tooltip7:hover .tooltiptext7 {
+      visibility: visible;
+    }
+
   </style>
 </head>
 <body>
@@ -228,6 +263,13 @@
   <h2>Bottom Tooltip with Top Arrow</h2>
   <div class="tooltip6">Hover over me
     <span class="tooltiptext6">Tooltip Text</span>
+  </div>
+
+  <br><br><hr>
+
+  <h2>Right Tooltip with Left Arrow</h2>
+  <div class="tooltip7">Hover over me
+    <span class="tooltiptext7">Tooltip Text</span>
   </div>
 
   <br><br><hr>
