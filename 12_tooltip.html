@@ -17,7 +17,7 @@
       border-bottom: 1px dotted black;
     }
 
-    .tooltiptext1 {
+    .tooltip1 .tooltiptext1 {
       width: 120px;
       background-color: black;
       color: #fff;
@@ -42,7 +42,7 @@
       border-bottom: 1px dotted black;
     }
 
-    .tooltiptext2 {
+    .tooltip2 .tooltiptext2 {
       visibility: hidden;
       width: 120px;
       background-color: black;
@@ -66,7 +66,7 @@
       border-bottom: 1px dotted black;
     }
 
-    .tooltiptext3 {
+    .tooltip3 .tooltiptext3 {
       visibility: hidden;
       width: 120px;
       background-color: black;
@@ -92,7 +92,7 @@
       border-bottom: 1px dotted black;
     }
 
-    .tooltiptext4 {
+    .tooltip4 .tooltiptext4 {
       visibility: hidden;
       width: 120px;
       background-color: black;
@@ -110,6 +110,42 @@
     .tooltip4:hover .tooltiptext4 {
       visibility: visible;
     }
+
+    /* Bottom Arrow */
+    .tooltip5 {
+      position: relative;
+      display: inline-block;
+      border-bottom: 1px dotted black;
+    }
+
+    .tooltip5 .tooltiptext5 {
+      visibility: hidden;
+      background-color: black;
+      color: #fff;
+      padding: 5px 0px;
+      border-radius: 6px;
+      width: 120px;
+      position: absolute;
+      left: 50%;
+      margin-left: -60px;
+      bottom: 100%;
+    }
+
+    .tooltip5 .tooltiptext5::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: black transparent transparent transparent;
+    }
+
+    .tooltip5:hover .tooltiptext5 {
+      visibility: visible;
+    }
+
 
   </style>
 </head>
@@ -143,5 +179,14 @@
   <div class="tooltip4">Hover over me
     <span class="tooltiptext4">Tooltip Text</span>
   </div>
+
+  <br><br><hr>
+
+  <h2>Top Tooltip with Bottom Arrow</h2>
+  <div class="tooltip5">Hover over me
+    <span class="tooltiptext5">Tooltip Text</span>
+  </div>
+
+  <br><br><hr>
 </body>
 </html>
