@@ -167,6 +167,46 @@
       -ms-transform: translate(-50%, -50%);
     }
 
+    /* Slide in Overlay from Left */
+    .container5 {
+      position: relative;
+      width: 25%;
+    }
+
+    .img5 {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .overlay4 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #008cba;
+      overflow: hidden;
+      width: 0;
+      height: 100%;
+      transition: .5s ease;
+    }
+
+    .container5:hover .overlay4 {
+      width: 100%;
+    }
+
+    .text5 {
+      white-space: nowrap;
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      overflow: hidden;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -m-transform: translate(-50%, -50%);
+    }
+
   </style>
 </head>
 <body>
@@ -200,6 +240,14 @@
     <img src="img/avatar-g780fe14b1_222_270.jpg" alt="Avatar" class="img4">
     <div class="overlay3">
       <div class="text4">Hello World</div>
+    </div>
+  </div>
+
+  <h2>Slide in Overlay from Left</h2>
+  <div class="container5">
+    <img src="img/avatar-g780fe14b1_222_270.jpg" alt="Avatar" class="img5">
+    <div class="overlay4">
+      <div class="text5">Hello World</div>
     </div>
   </div>
 </body>
