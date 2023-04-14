@@ -44,7 +44,47 @@
       transform: translate(-50%, -50%);
       -ms-transform: translate(-50%-50%);
     }
-    
+
+    /* Fade in a Box */
+    .container2 {
+      position: relative;
+      width: 25%;
+    }
+
+    .img2 {
+      opacity: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
+
+    .middle1 {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%, -50%);
+    }
+
+    .container2:hover .img2 {
+      opacity: 0.3;
+    }
+
+    .container2:hover .middle1 {
+      opacity: 1;
+    }
+
+    .text2 {
+      background-color: #4caf50;
+      color: white;
+      font-size: 16px;
+      padding: 16px 32px;
+    }
+
   </style>
 </head>
 <body>
@@ -55,6 +95,14 @@
       <div class="text1">Hello World</div>
     </div>
   </div>
+  </div>
+
+  <h2>Fade in a Box</h2>
+  <div class="container2">
+    <img src="img/avatar-g780fe14b1_222_270.jpg" alt="Avatar" class="img2">
+    <div class="middle1">
+      <div class="text2">John Doe</div>
+    </div>
   </div>
 </body>
 </html>
