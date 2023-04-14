@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>object-fit</title>
+  <style>
+    .fill {
+      object-fit: fill;
+    }
+
+    .contain {
+      object-fit: contain;
+    }
+
+    .cover {
+      object-fit: cover;
+    }
+
+    .scale-down {
+      object-fit: scale-down;
+    }
+
+    .none {
+      object-fit: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>The object-fit Property</h1>
+
+  <h2>No object-fit</h2>
+  <img src="img/pexels-paweł-l-600_400.jpg" alt="Paris" style="width:300px;height:400px">
+
+  <h2>fill (default)</h2>
+  <img class="fill" src="img/pexels-paweł-l-600_400.jpg" alt="City reflection in water" style="width:300px;height:400px">
+
+  <h2>contain</h2>
+  <img class="contain" src="img/pexels-paweł-l-600_400.jpg" alt="City reflection in water" style="width:300px;height:400px">
+
+  <h2>cover</h2>
+  <img class="cover" src="img/pexels-paweł-l-600_400.jpg" alt="City reflection in water" style="width:300px;height:400px">
+
+  <h2>scale-down</h2>
+  <img class="scale-down" src="img/pexels-paweł-l-600_400.jpg" alt="City reflection in water" style="width:300px;height:400px">
+
+  <h2>none</h2>
+  <img class="none" src="img/pexels-paweł-l-600_400.jpg" alt="City reflection in water" style="width:300px;height:400px">
+</body>
+</html>
