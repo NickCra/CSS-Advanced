@@ -85,6 +85,47 @@
       padding: 16px 32px;
     }
 
+    /* Slide in Overlay from Top */
+    .container3 {
+      position: relative;
+      width: 25%;
+    }
+
+    .img3 {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .overlay2 {
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      right: 0;
+      background-color: #008cba;
+      overflow: hidden;
+      width: 100%;
+      height: 0;
+      transition: .5s ease;
+    }
+
+    .container3:hover .overlay2 {
+      bottom: 0;
+      height: 100%;
+    }
+
+    .text3 {
+      white-space: nowrap;
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      overflow: hidden;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms transform: translate(-50%, -50%);
+    }
+
   </style>
 </head>
 <body>
@@ -102,6 +143,14 @@
     <img src="img/avatar-g780fe14b1_222_270.jpg" alt="Avatar" class="img2">
     <div class="middle1">
       <div class="text2">John Doe</div>
+    </div>
+  </div>
+
+  <h2>Slide in Overlay from Top</h2>
+  <div class="container3">
+    <img src="img/avatar-g780fe14b1_222_270.jpg" alt="Avatar" class="img3">
+    <div class="overlay2">
+      <div class="text3">Hello World</div>
     </div>
   </div>
 </body>
