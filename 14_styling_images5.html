@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styling Images 5</title>
+  <style>
+    /* Fade in Overlay */
+    .container1 {
+      position: relative;
+      width: 25%;
+    }
+
+    .img1 {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .overlay1 {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: #008CBA;
+    }
+
+    .container1:hover .overlay1 {
+      opacity: 1;
+    }
+
+    .text1 {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%-50%);
+    }
+    
+  </style>
+</head>
+<body>
+  <h2>Fade in Overlay</h2>
+  <div class="container1">
+    <img src="img/avatar-g780fe14b1_222_270.jpg" alt="Avatar" class="img1">
+    <div class="overlay1">
+      <div class="text1">Hello World</div>
+    </div>
+  </div>
+  </div>
+</body>
+</html>
