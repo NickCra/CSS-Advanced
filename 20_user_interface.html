@@ -33,6 +33,11 @@
       resize: both;
     }
 
+    /* Disable Resizability */
+    textarea#notres {
+      resize: none;
+    }
+
   </style>
 </head>
 <body>
@@ -53,6 +58,17 @@
     <p>To resize: Click and drag the bottom right corner of this div element.</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eveniet tempore magnam deserunt. Voluptas vitae quis in deleniti non ratione?</p>
   </div>
+
+  <h2>Disabled Resize Property</h2>
+  <p>In many browsers, textarea elements are resizable by default.</p>
+
+  <textarea name="notres" id="notres" cols="30" rows="10">Not resizable</textarea> 
+
+  <br><br>
+
+  <textarea name="res" id="res" cols="30" rows="10">Resizable</textarea>
+
+  <br><br><br><br><br><br><br><br>
 
 </body>
 </html>
