@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Variables</title>
+  <style>
+    :root {
+      --blue: #1e90ff;
+      --white: #ffffff;
+    }
+
+    body {
+      background-color: var(--blue);
+    }
+
+    h2 {
+      border-bottom: 2px solid var(--blue);
+    }
+
+    .container {
+      color: var(--blue);
+      background-color: var(--white);
+      padding: 15px;
+    }
+
+    button {
+      --blue: #0000ff; /* local variable will override global */
+      background-color: var(--white);
+      color: var(--blue);
+      border: 1px solid var(--blue);
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Using the var() Function</h2>
+
+  <div class="container">
+    <h2>Lorem Ipsum</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim iste aliquid sapiente maxime dolorum quia eum veritatis facilis accusantium repellat.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt maiores ex necessitatibus aut aliquid ipsam quod voluptate facilis quisquam eveniet?</p>
+    <button>Yes</button>
+    <button>No</button>
+  </div>
+</body>
+</html>
