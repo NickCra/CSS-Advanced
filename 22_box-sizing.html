@@ -20,6 +20,22 @@
       border: 1px solid blue;
     }
 
+    /* With box-sizing */
+    .div3 {
+      width: 300px;
+      height: 100px;
+      border: 1px solid blue;
+      box-sizing: border-box;
+    }
+
+    .div4 {
+      width: 300px;
+      height: 100px;
+      padding: 50px;
+      border: 1px solid blue;
+      box-sizing: border-box;
+    }
+
   </style>
 </head>
 <body>
@@ -29,6 +45,15 @@
   <br>
 
   <div class="div2">This div is bigger (width is also 300px and height is 100px).</div>
-  
+
+  <h2>With box-sizing</h2>
+  <div class="div3">Both divs are the same size now.</div>
+
+  <br>
+
+  <div class="div4">Both divs are the same size now.</div>
+
+  <br>
+
 </body>
 </html>
