@@ -24,6 +24,46 @@
       cursor: not-allowed;
     }
 
+    /* Animated Button: Arrow on Hover */
+    .button2 {
+      display: inline-block;
+      border-radius: 4px;
+      background-color: #f4511e;
+      color: white;
+      font-size: 22px;
+      border: none;
+      text-align: center;
+      padding: 20px;
+      width: 200px;
+      transition: all 0.4s;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    .button2 .span1 {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+
+    .button2 .span1:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+
+    .button2:hover .span1 {
+      padding-right: 25px;
+    }
+
+    .button2:hover .span1:after {
+      opacity: 1;
+      right: 0;
+    }
   </style>
 </head>
 <body>
@@ -31,5 +71,12 @@
 
   <button class="button1">Normal Button</button>
   <button class="button1 disabled">Disabled Button</button>
+
+  <h2>Animated Button: Arrow on Hover</h2>
+
+  <button class="button2">
+    <span class="span1">Hover </span>
+  </button>
+
 </body>
 </html>
