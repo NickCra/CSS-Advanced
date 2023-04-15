@@ -17,6 +17,32 @@
       padding: 8px 16px;
       text-decoration: none;
     }
+
+    /* Active and Hoverable Pagination */
+    .pagination2 {
+      display: inline-block;
+    }
+
+    .pagination2 .p2 {
+      color: black;
+      float: left;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+
+    .pagination2 .p2active {
+      color: black;
+      float: left;
+      padding: 8px 16px;
+      text-decoration: none;
+      background-color: rgb(12, 163, 12);
+      color: white;
+    }
+
+    .pagination2 .p2:hover:not(.p2active) {
+      background-color: #ddd;
+    }
+
   </style>
 </head>
 <body>
@@ -30,6 +56,18 @@
     <a href="#" class="p1">5</a>
     <a href="#" class="p1">6</a>
     <a href="#" class="p1">&raquo;</a>
+  </div>
+
+  <h2>Active and Hoverable Pagination</h2>
+  <div class="pagination2">
+    <a href="#" class="p2">&laquo;</a>
+    <a href="#" class="p2">1</a>
+    <a href="#" class="p2active">2</a>
+    <a href="#" class="p2">3</a>
+    <a href="#" class="p2">4</a>
+    <a href="#" class="p2">5</a>
+    <a href="#" class="p2">6</a>
+    <a href="#" class="p2">&raquo;</a>
   </div>
 </body>
 </html>
