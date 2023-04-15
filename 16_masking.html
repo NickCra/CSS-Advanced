@@ -20,6 +20,23 @@
       mask-image: linear-gradient(black,transparent);
     }
 
+    /* Linear Gradient with Text Masking as Mask Layer */
+    .text {
+      font-size: 20px;
+      padding: 60px;
+      color: white;
+      line-height: 2;
+    }
+
+    .mask3 {
+      max-width: 1000px;
+      height: 300px;
+      overflow-y: scroll;
+      background: url(img/pexels-maria-isabella-bernotti_1000_300.jpg);
+      -webkit-mask-image: linear-gradient(black, transparent);
+      mask-image: linear-gradient(black, transparent);
+    }
+
   </style>
 </head>
 <body>
@@ -27,14 +44,30 @@
 
   <h2>Image with Mask Layer Image</h2>
   <div class="mask1">
-    <img src="img/pexels-h-emre_600_400.jpg" alt="Nick Logo">
+    <img src="img/pexels-h-emre_600_400.jpg" alt="Angel wings">
   </div>
 
   <h2>Linear Gradient as Mask Layer</h2>
   <div class="mask2">
-    <img src="img/pexels-maria-isabella-bernotti_1000_300.jpg" alt="">
+    <img src="img/pexels-maria-isabella-bernotti_1000_300.jpg" alt="A beach">
   </div>
 
+  <h2>Linear Gradient with Text Masking as Mask Layer</h2>
+  <div class="mask3">
+    <p class="text">The sea was wet as wet could be,
+      The sands were dry as dry.
+      You could not see a cloud, because
+      No cloud was in the sky:
+      No birds were flying overhead —
+      There were no birds to fly.
+      
+      The Walrus and the Carpenter
+      Were walking close at hand;
+      They wept like anything to see
+      Such quantities of sand:
+      ‘If this were only cleared away,’
+      They said, ‘it would be grand!’</p>
+  </div>
 
 </body>
 </html>
