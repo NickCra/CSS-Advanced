@@ -282,6 +282,23 @@
       line-height: 75px;
     }
 
+    /* align-items Property: baseline */
+    .flex-container17 {
+      display: flex;
+      height: 200px;
+      align-items: baseline;
+      background-color: dodgerblue;
+    }
+
+    .flex-container17 > div.seventeen {
+      background-color: #f1f1f1;
+      margin: 10px;
+      width: 100px;
+      text-align: center;
+      font-size: 30px;
+      line-height: 75px;
+    }
+
   </style>
 </head>
 <body>
@@ -436,6 +453,17 @@
     <div class="sixteen">1</div>
     <div class="sixteen">2</div>
     <div class="sixteen">3</div>
+  </div>
+
+  <h4>baseline</h4>
+
+  <p>Note: the example uses different font-sizes to demonstrate that the item gets aligned by the text baseline.</p>
+
+  <div class="flex-container17">
+    <div class="seventeen"><h1>1</h1></div>
+    <div class="seventeen"><h6>2</h6></div>
+    <div class="seventeen"><h3>3</h3></div>
+    <div class="seventeen"><small>4</small></div>
   </div>
 
 </body>
