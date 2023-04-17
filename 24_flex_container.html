@@ -198,6 +198,22 @@
       text-align: center;
     }        
     
+  /* justify-content Property: space-between */
+    .flex-container12 {
+      display: flex;
+      justify-content: space-between;
+      background-color: dodgerblue;
+    }
+
+    .flex-container12 > div.twelve {
+      background-color: #f1f1f1;
+      margin: 10px;
+      width: 100px;
+      line-height: 75px;
+      font-size: 30px;
+      text-align: center;
+    }        
+    
   </style>
 </head>
 <body>
@@ -311,6 +327,14 @@
     <div class="eleven">1</div>
     <div class="eleven">2</div>
     <div class="eleven">3</div>
+  </div>
+
+  <h4>space-between</h4>
+
+  <div class="flex-container12">
+    <div class="twelve">1</div>
+    <div class="twelve">2</div>
+    <div class="twelve">3</div>
   </div>
 </body>
 </html>
