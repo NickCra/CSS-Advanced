@@ -214,7 +214,7 @@
       text-align: center;
     }        
     
-    /* align-items Property */
+    /* align-items Property: center */
     .flex-container13 {
       display: flex;
       height: 200px;
@@ -230,7 +230,22 @@
       font-size: 30px;
       line-height: 75px;
     }
+    /* align-items Property: flex-start */
+    .flex-container14 {
+      display: flex;
+      height: 200px;
+      align-items: flex-start;
+      background-color: dodgerblue;
+    }
 
+    .flex-container14 > div.fourteen {
+      background-color: #f1f1f1;
+      margin: 10px;
+      width: 100px;
+      text-align: center;
+      font-size: 30px;
+      line-height: 75px;
+    }
 
   </style>
 </head>
@@ -362,6 +377,14 @@
     <div class="thirteen">1</div>
     <div class="thirteen">2</div>
     <div class="thirteen">3</div>
+  </div>
+
+  <h4>flex-start</h4>
+
+  <div class="flex-container14">
+    <div class="fourteen">1</div>
+    <div class="fourteen">2</div>
+    <div class="fourteen">3</div>
   </div>
 
 </body>
