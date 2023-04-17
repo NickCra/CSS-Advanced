@@ -36,6 +36,22 @@
       font-size: 30px;
     }
 
+    /* flex-direction Property: column-reverse */
+    .flex-container3 {
+      display: flex;
+      background-color: dodgerblue;
+      flex-direction: column-reverse;
+    }    
+
+    .flex-container3 > div.three {
+      background-color: #f1f1f1;
+      width: 100px;
+      padding: 10px;
+      margin: 10px;
+      font-size: 30px;
+      text-align: center;
+      line-height: 75px;
+    }
   </style>
 </head>
 <body>
@@ -54,6 +70,13 @@
     <div class="two">1</div>
     <div class="two">2</div>
     <div class="two">3</div>
+  </div>
+
+  <h4>column-reverse</h4>
+  <div class="flex-container3">
+    <div class="three">1</div>
+    <div class="three">2</div>
+    <div class="three">3</div>
   </div>
 
 </body>
