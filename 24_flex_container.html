@@ -166,6 +166,22 @@
       font-size: 30px;
       text-align: center;
     }    
+
+  /* justify-content Property: flex-end */
+    .flex-container10 {
+      display: flex;
+      justify-content: flex-end;
+      background-color: dodgerblue;
+    }
+
+    .flex-container10 > div.ten {
+      background-color: #f1f1f1;
+      margin: 10px;
+      width: 100px;
+      line-height: 75px;
+      font-size: 30px;
+      text-align: center;
+    }        
     
   </style>
 </head>
@@ -257,12 +273,21 @@
     <div class="eight">12</div>
   </div>
   
-  <h2>justify-content Property: center</h2>
+  <h2>justify-content Property</h2>
+  <h4>center</h4>
 
   <div class="flex-container9">
     <div class="nine">1</div>
     <div class="nine">2</div>
     <div class="nine">3</div>
+  </div>
+
+  <h4>flex-end</h4>
+
+  <div class="flex-container10">
+    <div class="ten">1</div>
+    <div class="ten">2</div>
+    <div class="ten">3</div>
   </div>
 </body>
 </html>
