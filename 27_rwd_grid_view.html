@@ -21,6 +21,35 @@
       padding: 15px;
     }
 
+    html {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    .header {
+      background-color: #9933cc;
+      color: #ffffff;
+      padding: 15px;
+    }
+    
+    .menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .menu li {
+      padding: 8px;
+      margin-bottom: 7px;
+      background-color: #33b5e5;
+      color: #ffffff;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24;)
+    }
+    
+    .menu li:hover {
+      background: #0099cc;
+    }
+
+    /* For desktop */
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
     .col-3 {width: 25%;}
@@ -34,34 +63,13 @@
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
 
-    html {
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    @media only screen and (max-width: 768px) {
+      /* For mobile phones */
+      [class*="col-"] {
+        width: 100%;
+      }
     }
-
-    .header {
-      background-color: #9933cc;
-      color: #ffffff;
-      padding: 15px;
-    }
-
-    .menu ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    .menu li {
-      padding: 8px;
-      margin-bottom: 7px;
-      background-color: #33b5e5;
-      color: #ffffff;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24;)
-    }
-
-    .menu li:hover {
-      background: #0099cc;
-    }
-
+    
     </style>
 </head>
 <body>
