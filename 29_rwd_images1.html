@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Web Design - Images</title>
+  <style>
+    /* width Property */
+    .img1 {
+      width: 100%;
+      height: auto;
+    }
+
+    /* max-width Property */
+    .img2 {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <h2>Using width Property</h2>
+  <p>Resize the browser window to see how the image will scale.</p>
+  <img class="img1" src="img/pexels-elina-sazonova_600_400.jpg" alt="Signapore" width="600" height="400">
+
+  <h2>Using max-width Property</h2>
+  <p>Resize the browser window to see how the image will scale when the width is less than 600px.</p>
+  <img src="img/pexels-elina-sazonova_600_400.jpg" alt="Signapore" width="600" height="400" class="img2">
+</body>
+</html>
