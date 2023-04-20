@@ -6,12 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Web Design - Images 2</title>
   <style>
+    /* contain */
     .one {
       width: 100%;
       height: 400px;
       background-image: url('img/pexels-h-emre_600_400.jpg');
       background-repeat: no-repeat;
       background-size: contain;
+      border: 1px solid red;
+    }
+
+    /* cover */
+    .two {
+      width: 100%;
+      height: 400px;
+      background-image: url('img/pexels-h-emre_600_400.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
       border: 1px solid red;
     }
   </style>
@@ -22,5 +33,10 @@
   <p>Resize the browser window to see the effect.</p>
 
   <div class="one"></div>
+
+  <h4>cover</h4>
+  <p>Resize the browser window to see the effect.</p>
+
+  <div class="two"></div>
 </body>
 </html>
