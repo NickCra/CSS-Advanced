@@ -73,6 +73,22 @@
       font-size: 30px;
     }
 
+    /* justify-content: space-between */
+    .grid-container5 {
+      display: grid;
+      justify-content: space-between;
+      grid-template-columns: 50px 50px 50px;
+      gap: 10px;
+      background-color: #2196f3;
+      padding: 10px;
+    }
+
+    .grid-container5 > div {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 20px 0;
+      font-size: 30px;
+
   </style>
 </head>
 <body>
@@ -114,6 +130,16 @@
 
   <h4>space-around</h4>
   <div class="grid-container4">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+  </div>
+
+  <h4>space-between</h4>
+  <div class="grid-container5">
     <div>1</div>
     <div>2</div>
     <div>3</div>
