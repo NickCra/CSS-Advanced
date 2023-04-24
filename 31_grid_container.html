@@ -140,6 +140,23 @@
       padding: 20px 0;
       font-size: 30px;
     }
+    /* align-content: center */
+    .grid-container9 {
+    display: grid;
+    height: 400px;
+    align-content: center;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    background-color: #2196f3;
+    padding: 10px;
+    }
+
+    .grid-container9 > div {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 20px 0;
+      font-size: 30px;
+    }
 
   </style>
 </head>
@@ -229,6 +246,20 @@
     <div>5</div>
     <div>6</div>
   </div>
+
+  <h2>align-content</h2>
+
+  <h4>center</h4>
+  <div class="grid-container9">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+  </div>
+
+
 
 </body>
 </html>
