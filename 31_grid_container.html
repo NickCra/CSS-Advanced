@@ -124,6 +124,23 @@
       font-size: 30px;
     }
 
+    /* justify-content: end */
+    .grid-container8 {
+    display: grid;
+    justify-content: end;
+    grid-template-columns: 50px 50px 50px;
+    gap: 10px;
+    background-color: #2196f3;
+    padding: 10px;
+    }
+
+    .grid-container8 > div {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 20px 0;
+      font-size: 30px;
+    }
+
   </style>
 </head>
 <body>
@@ -195,6 +212,16 @@
 
   <h4>start</h4>
   <div class="grid-container7">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+  </div>
+
+  <h4>end</h4>
+  <div class="grid-container8">
     <div>1</div>
     <div>2</div>
     <div>3</div>
