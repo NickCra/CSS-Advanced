@@ -46,7 +46,26 @@
       grid-row: 1 / span 3; 
     }
 
+    /* grid-area Property */
+    .grid-container3 {
+      display: grid;
+      grid-template-columns: auto auto auto auto auto auto;
+      gap: 10px;
+      background-color: #2196f3;
+      padding: 10px;
+    }
 
+    .grid-container3 > div {
+      background-color: rgba(2555, 255, 255, 0.8);
+      padding: 20px 0;
+      text-align: center;
+      font-size: 30px;
+    }
+
+    .item8c {
+      grid-area: 1 / 2 / 5 / 6;
+      /* grid-area: 1 / 2 / span 4 / span 4 */
+    }
   </style>
 </head>
 <body>
@@ -71,6 +90,7 @@
   </div>
 
   <h2>grid-row Property</h2>
+
   <div class="grid-container2">
     <div class="item1b">1</div>
     <div class="item2b">2</div>
@@ -88,5 +108,26 @@
     <div class="item14b">14</div>
     <div class="item15b">15</div>
   </div>
+
+  <h2>grid-area Property</h2>
+  
+  <div class="grid-container3">
+    <div class="item1c">1</div>
+    <div class="item2c">2</div>
+    <div class="item3c">3</div>
+    <div class="item4c">4</div>
+    <div class="item5c">5</div>
+    <div class="item6c">6</div>
+    <div class="item7c">7</div>
+    <div class="item8c">8</div>
+    <div class="item9c">9</div>
+    <div class="item10c">10</div>
+    <div class="item11c">11</div>
+    <div class="item12c">12</div>
+    <div class="item13c">13</div>
+    <div class="item14c">14</div>
+    <div class="item15c">15</div>
+  </div>
+
 </body>
 </html>
