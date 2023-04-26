@@ -64,8 +64,29 @@
 
     .item8c {
       grid-area: 1 / 2 / 5 / 6;
-      /* grid-area: 1 / 2 / span 4 / span 4 */
+      /* = grid-area: 1 / 2 / span 4 / span 4 */
     }
+
+    /* grid-area Property: Part 1*/
+    .item1d {
+      grid-area: myArea;
+    }
+
+    .grid-container4 {
+      display: grid;
+      grid-template-areas: 'myArea myArea myArea myArea myArea';
+      gap: 10px;
+      background-color: #2196f3;
+      padding: 10px;
+    }
+
+    .grid-container4 > div {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 20px 0;
+      font-size: 30px;
+    }
+
   </style>
 </head>
 <body>
@@ -110,7 +131,7 @@
   </div>
 
   <h2>grid-area Property</h2>
-  
+
   <div class="grid-container3">
     <div class="item1c">1</div>
     <div class="item2c">2</div>
@@ -127,6 +148,21 @@
     <div class="item13c">13</div>
     <div class="item14c">14</div>
     <div class="item15c">15</div>
+  </div>
+
+  <h2>Naming Grid Items</h2>
+
+  <p>You can use the grid-area property to name grid items.</p>
+  <p>You can refer to the name when you set up the grid layout, by using the <em>grid-template-areas</em> property on the grid container.</p>
+  <p>Item1d, is called "myArea" and will take up the place of all five columns:</p>
+
+  <div class="grid-container4">
+    <div class="item1d">1</div>
+    <div class="item2d">2</div>
+    <div class="item3d">3</div>
+    <div class="item4d">4</div>
+    <div class="item5d">5</div>
+    <div class="item6d">6</div>
   </div>
 
 </body>
