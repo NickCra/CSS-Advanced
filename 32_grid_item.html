@@ -127,6 +127,28 @@
       font-size: 30px;
     }
 
+    /* grid-area-Property: Part4 */
+    .item1g { grid-area: header; }
+    .item2g { grid-area: menu; }
+    .item3g {grid-area: main; }
+    .item4g {grid-area: right; }
+    .item5g {grid-area: footer; }
+
+    .grid-container7 {
+      display: grid;
+      grid-template-areas: 'header header header header header header' 'menu main main main right right' 'menu footer footer footer footer footer';
+      gap: 10px;
+      padding: 10px;
+      background-color: #2196f3;
+    }
+
+    .grid-container7 > div {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      font-size: 30px;
+      padding: 20px 0;
+    }
+
   </style>
 </head>
 <body>
@@ -229,6 +251,16 @@
     <div class="item5f">5</div>
     <div class="item6f">6</div>
     <div class="item7f">7</div>
+  </div>
+
+  <p>Name all items, and make a ready-to-use webpage template:</p>
+
+  <div class="grid-container7">
+    <div class="item1g">Header</div>
+    <div class="item2g">Menu</div>
+    <div class="item3g">Main</div>
+    <div class="item4g">Right</div>
+    <div class="item5g">Footer</div>
   </div>
 
 </body>
