@@ -107,6 +107,26 @@
       font-size: 30px;
     }
 
+    /* grid-area Property: Part3 */
+    .item1f {
+      grid-area: myArea;
+    }
+
+    .grid-container6 {
+      display: grid;
+      grid-template-areas: 'myArea myArea . . .' 'myArea myArea . . .';
+      gap: 10px;
+      padding: 10px;
+      background-color: #2196f3;
+    }
+
+    .grid-container6 > div {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 20px 0;
+      font-size: 30px;
+    }
+
   </style>
 </head>
 <body>
@@ -197,6 +217,18 @@
     <div class="item7e">7</div>
     <div class="item8e">8</div>
     <div class="item9e">9</div>
+  </div>
+
+  <p>Item1f, is called "myArea" and will take up the place of two columns (out of five), and will span two rows:</p>
+
+  <div class="grid-container6">
+    <div class="item1f">1</div>
+    <div class="item2f">2</div>
+    <div class="item3f">3</div>
+    <div class="item4f">4</div>
+    <div class="item5f">5</div>
+    <div class="item6f">6</div>
+    <div class="item7f">7</div>
   </div>
 
 </body>
