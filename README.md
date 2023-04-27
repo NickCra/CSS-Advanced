@@ -1,0 +1,34 @@
+# CSS Advanced
+
+Learning some Advanced CSS:
+- Rounded Corners
+- Linear Gradients
+- Radial Gradients
+- Conic Gradients
+- Box Shadow
+- Text Effects
+- 2D Transforms
+- 3D Transforms
+- Transitions
+- Animations
+- Tooltip
+- Styling Images
+- Object-fit
+- Object-position
+- Masking
+- Buttons
+- Pagination
+- Multiple Columns
+- User Interface
+- Variables
+- Box-sizing
+- Media Queries
+- Flex Container
+- Flex Items
+- Flex Responsive
+- RWD Grid View
+- RWD Media Queries
+- RWD Images
+- Grid
+- Grid Container
+- Grid Item
